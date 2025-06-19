@@ -8,42 +8,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="header">
+  <header class="header" role="banner">
     <div class="banner">
-      🍕 D'OH-MINO'S PIZZA
+      <span aria-hidden="true">🍕</span>
+      <span id="site-title">D'OH-MINO'S PIZZA</span>
     </div>
-    <div class="nav">
-      <a href="#">Menu</a>
-      <a href="#">Locations</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#" tabindex="0">Menu</a>
+      <a href="#" tabindex="0">Locations</a>
+      <a href="#" tabindex="0">Contact</a>
+    </nav>
+  </header>
 
-  <div class="info">
-    <p class="tagline">MISTAKES TASTE BETTER WHEN THEY'RE COVERED IN CHEESE</p>
-    <p class="description">
-      Welcome to D'oh-mino's, where we've cut corners in every possible way—except for the cheese. 
-      But at least our pizza is *probably* edible.
-    </p>
-    <a href="#" class="order-now">ORDER NOW</a>
-  </div>
+  <main id="main-content" class="main-wrapper">
+    <section class="info" aria-labelledby="site-title">
+      <h1 class="tagline">MISTAKES TASTE BETTER WHEN THEY'RE COVERED IN CHEESE</h1>
+      <p class="description">
+        Welcome to D'oh-mino's, where we've cut corners in every possible way—except for the cheese.
+        But at least our pizza is <em>probably</em> edible.
+      </p>
+      <a href="#" class="order-now" role="button" aria-label="Order pizza now">ORDER NOW</a>
+    </section>
 
-  <div class="main-content">
-    <div class="deal">
-      <img src="img/pizza-deal.jpg">
-      <p>Our most *questionable* deal yet! Get two large pizzas for the price of three.</p>
-    </div>
+    <section class="main-content" aria-label="Pizza Deals">
+      <article class="deal">
+        <img src="img/pizza-deal.jpg" alt="A freshly baked pizza topped with olives, diced tomatoes, and drizzled with white sauce, served on a wooden platter with another pizza blurred in the background."/>
+        <p>Our most <em>questionable</em> deal yet! Get two large pizzas for the price of three.</p>
+      </article>
 
-    <div class="deal">
-      <img src="img/cold-pizza.jpg">
-      <p>Cold Pizza Sampler. Why wait until the morning to eat cold pizza?</p>
-  </div>
-  </div>
+      <article class="deal">
+        <img src="img/cold-pizza.jpg" alt="Two slices of pepperoni pizza with green pepper bits on a greasy pizza box, with a few French fries in the background." />
+        <p>Cold Pizza Sampler. Why wait until the morning to eat cold pizza?</p>
+      </article>
+    </section>
+  </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>© 2025 D'oh-mino's Pizza - No refunds, no regrets</p>
   </footer>
-
 </body>
 </html>

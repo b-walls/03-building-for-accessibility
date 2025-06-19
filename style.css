@@ -1,14 +1,14 @@
 body {
   font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
   background: #f5f5f5;
-  color: #cccccc;
+  color: #222222; /* Improved contrast */
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
 .header {
-  background: #006491;
+  background: #00395d; /* Darker for better contrast */
   padding-top: 20px;
   padding-bottom: 20px;
   box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
 .banner {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 32px;
-  color: white;
+  color: #ffffff;
 }
 
 .nav {
@@ -25,24 +25,31 @@ body {
 }
 
 .nav a {
-  color: #cccccc;
+  color: #ffffff; /* Improved contrast */
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
   margin: 0 15px;
 }
 
+.nav a:focus,
+.nav a:hover {
+  outline: 2px solid #E31837;
+  background: #e6e6e6;
+  color: #00395d;
+}
+
 .tagline {
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #bbbbbb;
+  color: #222222; /* Improved contrast */
   margin: 30px 0 15px;
 }
 
 .description {
   font-size: 16px;
-  color: #bbbbbb;
+  color: #333333; /* Improved contrast */
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.4;
@@ -52,7 +59,7 @@ body {
   width: 200px;
   display: inline-block;
   background: #E31837;
-  color: #801525;
+  color: #ffffff; /* Improved contrast */
   padding: 12px 24px;
   font-size: 18px;
   text-transform: uppercase;
@@ -60,6 +67,13 @@ body {
   font-weight: bold;
   border-radius: 3px;
   margin-top: 30px;
+  border: none;
+}
+
+.order-now:focus,
+.order-now:hover {
+  outline: 2px solid #00395d;
+  background: #b51229;
 }
 
 .main-content {
@@ -74,6 +88,9 @@ body {
 .deal {
   width: 45%;
   border-radius: 5px;
+  background: #ffffff; /* Add background for contrast */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding-bottom: 10px;
 }
 
 .deal img {
@@ -87,5 +104,5 @@ body {
 .deal p {
   font-size: 12px;
   font-weight: bold;
-  color: #bbbbbb;
+  color: #111;
 }
